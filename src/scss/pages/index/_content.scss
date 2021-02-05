@@ -19,6 +19,7 @@
 				min-width: 140px;
 				margin-bottom: 49px;
 				padding: 0 17px;
+
 				@include media-down(1150px) {
 					max-width: calc(100% / 4);
 				}

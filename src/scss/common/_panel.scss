@@ -2,7 +2,6 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	min-height: 328px;
 	margin-bottom: 29px;
 	padding: 20px 24px 20px 21px;
 	background-color: #dadada;
@@ -87,7 +86,7 @@
 	}
 
 	@include media-down(400px){
-		min-height: 316px;
+		height: 316px;
 		margin-bottom: 0;
 		padding: 21px 13px 12px 19px;
 	}

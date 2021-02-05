@@ -6,6 +6,13 @@
 
 	h1 {
 		margin-bottom: 0;
+
+		@include media-down(1024px) {
+			font-size: 30px;
+		}
+		@include media-down(880px) {
+			font-size: 34px;
+		}
 	}
 
 	.search {
@@ -14,6 +21,13 @@
 
 		&__input {
 			width: 254px;
+
+			@include media-down(1024px) {
+				width: 160px;
+			}
+			@include media-down(880px) {
+				width: 254px;
+			}
 		}
 
 		&__button {
@@ -44,7 +58,7 @@
 		}
 	}
 
-	@include media-down(768px){
+	@include media-down(768px) {
 		display: none;
 	}
 }

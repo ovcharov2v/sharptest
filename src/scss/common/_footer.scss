@@ -44,6 +44,11 @@
 
 		&__elem {
 			list-style-type: none;
+			transition: transform 0.3s, color 0.3s;
+			&:hover {
+				color: lighten(#2d2d2f, 20%);
+				transform: scale(1.1);
+			}
 		}
 
 		&__link {
@@ -51,11 +56,6 @@
 			font-size: 52px;
 			color: #2d2d2f;
 			text-decoration: none;
-			transition: transform 0.3s, color 0.3s;
-			&:hover {
-				color: lighten(#2d2d2f, 20%);
-				transform: scale(1.1);
-			}
 		}
 
 		@include media-down(880px) {
