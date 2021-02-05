@@ -29,3 +29,15 @@
 		@content;
 	}
 }
+
+@mixin media-down($value) {
+	@if $value {
+		@media (max-width: $value) {
+			@content;
+		}
+	}
+
+	@else {
+		@content;
+	}
+}

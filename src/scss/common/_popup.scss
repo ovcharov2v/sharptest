@@ -26,11 +26,28 @@
 	&__header {
 		margin-bottom: 9px;
 		letter-spacing: 0.03em;
+		@include media-down(768px){
+			margin-bottom: 8px;
+		}
 	}
 
 	&__message {
 		margin-bottom: 0;
 		font-size: 12px;
 		line-height: 14px;
+		@include media-down(1200px){
+			br {
+				display: none;
+			}
+		}
+	}
+
+	@include media-down(1200px){
+		width: 200px;
+	}
+	@include media-down(768px){
+		width: 144px;
+		padding-top: 14px;
+		padding-bottom: 14px;
 	}
 }
