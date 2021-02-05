@@ -1127,11 +1127,23 @@ ul {
   padding-bottom: 4px; }
   .page-header h1 {
     margin-bottom: 0; }
+    @media (max-width: 1024px) {
+      .page-header h1 {
+        font-size: 30px; } }
+    @media (max-width: 880px) {
+      .page-header h1 {
+        font-size: 34px; } }
   .page-header .search {
     position: relative;
     margin-top: 6px; }
     .page-header .search__input {
       width: 254px; }
+      @media (max-width: 1024px) {
+        .page-header .search__input {
+          width: 160px; } }
+      @media (max-width: 880px) {
+        .page-header .search__input {
+          width: 254px; } }
     .page-header .search__button {
       position: absolute;
       top: 0;
