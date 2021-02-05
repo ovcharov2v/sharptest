@@ -1,0 +1,36 @@
+.popup {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 50%;
+	width: 248px;
+	padding: 10px 10px 20px;
+	background-color: rgba(#000, 0.79);
+	border-radius: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #d3d3d3;
+	transform: translate(-50%, -100%) translateY(-15px);
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 12px 12.5px 0 12.5px;
+		border-color: rgba(#000, 0.79) transparent transparent transparent;
+		content: "";
+		transform: translate(-50%, 12px);
+	}
+
+	&__header {
+		margin-bottom: 9px;
+		letter-spacing: 0.03em;
+	}
+
+	&__message {
+		margin-bottom: 0;
+		font-size: 12px;
+		line-height: 14px;
+	}
+}

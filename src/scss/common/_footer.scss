@@ -1,0 +1,155 @@
+.footer {
+	background-color: #181818;
+
+	.footer-top {
+		display: flex;
+		background-color: #151515;
+		padding-top: 11px;
+		padding-bottom: 10px;
+
+		.row {
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+	.social-menu {
+		&__list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 -46px;
+			padding: 9px 0 5px;
+		}
+
+		&__elem {
+			padding: 0 40px;
+			list-style-type: none;
+		}
+
+		&__link {
+			display: inline-block;
+			font-size: 52px;
+			color: #2d2d2f;
+			text-decoration: none;
+			transition: transform 0.3s, color 0.3s;
+			&:hover {
+				color: lighten(#2d2d2f, 20%);
+				transform: scale(1.1);
+			}
+		}
+
+		.icon-evernote {
+			font-size: 52px;
+		}
+		.icon-facebook {
+			margin-top: -1px;
+			margin-left: 5px;
+			font-size: 45px;
+		}
+		.icon-pinterest {
+			margin-left: 10px;
+			font-size: 42px;
+		}
+		.icon-twitter {
+			margin-left: 7px;
+			font-size: 51px;
+			margin-top: -6px;
+		}
+		.icon-youtube {
+			margin-top: -3px;
+			margin-left: 3px;
+			font-size: 49px;
+		}
+		.icon-github {
+			margin-top: -6px;
+			margin-left: 4px;
+			font-size: 50px;
+		}
+	}
+
+	.copy {
+		margin-bottom: 0;
+		font-size: 32px;
+		letter-spacing: -0.035em;
+		color: #444;
+
+		span {
+			display: inline-block;
+			margin-right: 5px;
+			font-size: 27px;
+		}
+	}
+
+	.footer-main {
+		padding-top: 24px;
+		padding-bottom: 10px;
+		&__row {
+			justify-content: space-between;
+		}
+		&__left {
+			margin: 0 -10px;
+			justify-content: space-between;
+			width: calc(100% - 338px);
+			.col {
+				min-width: 166px;
+				padding: 0 10px;
+				&:nth-child(2) {
+					padding-left: 36px;
+				}
+			}
+		}
+		h2 {
+			margin-bottom: 22px;
+			letter-spacing: -0.025em;
+			color: #444;
+		}
+		a,
+		p {
+			font-size: 16px;
+			line-height: 19px;
+			color: #bbbbbb;
+			text-decoration: none;
+		}
+		p {
+			margin-bottom: 12px;
+		}
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		ul {
+			padding-left: 0;
+			li {
+				margin-bottom: 12px;
+				list-style-type: none;
+			}
+		}
+
+		&__right {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: flex-end;
+			flex-shrink: 0;
+			width: 338px;
+			text-align: right;
+
+			img {
+				display: inline-block;
+				margin-bottom: 18px;
+			}
+
+			p {
+				margin-bottom: 11px;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 17px;
+				letter-spacing: -0.025em;
+				color: #5c5c5c;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.page-header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	h1 {
+		margin-bottom: 0;
+	}
+
+	.search {
+		position: relative;
+		margin-top: 5px;
+
+		&__input {
+			width: 254px;
+		}
+
+		&__button {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 39px;
+			height: 100%;
+			border-width: 0;
+			background-color: transparent;
+			transition: background-color 0.3s;
+			&::before {
+				color: #acacac;
+				transition: color 0.3s;
+			}
+			&:hover {
+				&::before {
+					color: darken(#acacac, 30%);
+				}
+			}
+			&:focus {
+				background-color: #c0c0c0;
+				outline: none;
+				&::before {
+					color: #000;
+				}
+			}
+		}
+	}
+}

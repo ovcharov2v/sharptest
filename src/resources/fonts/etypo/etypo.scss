@@ -1,0 +1,54 @@
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/etypo/icomoon.eot?efttea");
+	src: url("../fonts/etypo/icomoon.eot?efttea#iefix")
+			format("embedded-opentype"),
+		url("../fonts/etypo/icomoon.ttf?efttea") format("truetype"),
+		url("../fonts/etypo/icomoon.woff?efttea") format("woff"),
+		url("../fonts/etypo/icomoon.svg?efttea#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+	content: "\e906";
+  }
+  .icon-github:before {
+	content: "\e900";
+  }
+  .icon-twitter:before {
+	content: "\e901";
+  }
+  .icon-facebook:before {
+	content: "\e902";
+  }
+  .icon-evernote:before {
+	content: "\e903";
+  }
+  .icon-youtube:before {
+	content: "\e904";
+  }
+  .icon-pinterest:before {
+	content: "\e905";
+  }
+  .icon-spinner2:before {
+	content: "\e97b";
+  }
+

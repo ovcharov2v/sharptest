@@ -21,3 +21,80 @@ button:not([disabled]),
 a[role="button"]:not([disabled]) {
 	cursor: pointer;
 }
+
+body {
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	background-image: url("../images/common/bg.jpg");
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-left: 47px;
+	padding-right: 47px;
+}
+
+.row {
+	display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 34px;
+	letter-spacing: -0.005em;
+}
+
+h2 {
+	font-size: 26px;
+	letter-spacing: 0.005em;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+p,
+ul {
+	margin-top: 0;
+}
+
+.section {
+	padding-top: 15px;
+	&__header {
+		position: relative;
+		margin-bottom: 31px;
+		&::before {
+			position: absolute;
+			top: 14px;
+			left: -6px;
+			width: 19px;
+			height: 8px;
+			background-color: #933435;
+			content: "";
+			transform: translateX(-100%);
+		}
+	}
+}
+
+.content-container {
+	padding-top: 39px;
+	background-color: #e9e9e9;
+	.content-row {
+		display: flex;
+	}
+}

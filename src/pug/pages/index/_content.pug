@@ -1,0 +1,37 @@
+.page-header
+	h1 ParrotWings Exchange
+	form.search(action="#")
+		input.search__input.input.input--sm(type="text", placeholder="Search...")
+		button.search__button.icon-search(type=submit)
+section.section.section--products
+	h2.section__header Products
+	.row
+		-
+			var parrotsList = [
+					{title: 'Unlimited exchange', props: '2 props'},
+					{title: 'International exchange', props: '1 prop'},
+					{title: 'Additional services', props: '3 props, all'},
+					{title: 'Support', props: '5 props'},
+					{title: 'Holiday works', props: '2 props'},
+					{title: 'Postal delivery', props: 'not in access'},
+					{title: 'Document management', props: '2 props'},
+					{title: 'Promotions', props: '1 prop'},
+				];
+		each parrot, index in parrotsList
+			figure.parrot.col
+				img.parrot__image(src="images/pages/index/parrot" + (index+1) + ".jpg", alt="")
+				figcaption
+					p.parrot__props #{parrot.props}
+					h3.parrot__title #{parrot.title}
+					.button-wrapper
+						if index == 4
+							.popup
+								h6.popup__header Popup header
+								p.popup__message Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									br
+									| tempor incididunt ut labore.
+						a.button.button--dark(href="#")
+							span Order
+	.more-wrapper
+		a.more(href="#") More products...
+

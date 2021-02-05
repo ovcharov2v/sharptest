@@ -8,3 +8,16 @@
 @import "vendor";
 @import "base";
 @import "helpers";
+
+// Common
+@import "common/header";
+@import "common/footer";
+@import "common/form";
+@import "common/button";
+@import "common/page_header";
+@import "common/panel";
+@import "common/popup";
+@import "common/sidebar";
+
+// Index page
+@import "pages/index/content";
