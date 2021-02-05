@@ -1,3 +1,5 @@
-# Документация
+# Sharps Developers test
 
-Документация к данной сборке доступна по ссылке [https://github.com/ninelines-team/ninelines-docs](https://github.com/ninelines-team/ninelines-docs).
+Ссылка на проект на [https://ovcharov2v.github.io/sharptest/build/](gh-pages).
+
+Документация сборке доступна по [https://github.com/ninelines-team/ninelines-docs](ссылке).
